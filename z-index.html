@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="filho" style="z-index: 2; background-color: black;"></div> <!--z index 2 -->
+</div> <!--z index 10 -->
+<div class="pai " style="z-index: 2; background-color:blue;">
+    <div class="filho" style="z-index: 1000; background-color: blue;"></div> <!--z index 1000 -->
+    <div class="filho" style="z-index: 500;"></div> <!--z index 500 -->
+</div> <!--z index 2 -->
+<div class="pai" style="z-index: 5; background-color:red;">
+    <div class="filho" style="z-index: 400;"></div> <!--z index 400 -->
+</div> <!--z index 5 -->
+<div class="pai" style="z-index: 8; background-color:yellow"></div> <!--z index 15 -->
+
+
+<div class="border flexbox">
+    <div class="row margin-bottom flexbox">
+      <div class="form-control">
+        <input name="firstname" />
+      </div>
+      <div class="form-control">
+        <input name="lastnam" />
+      </div>
+    </div> 
+    <div class="row margin-bottom flexbox">
+    </div> 
+    <div class="row margin-bottom flexbox">
+    </div>
+    <div class="row margin-bottom flexbox">
+    </div>  
+  </div>
+</div>
+
+</body>
+</html>

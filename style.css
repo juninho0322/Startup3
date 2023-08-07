@@ -1,0 +1,488 @@
+*, 
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.container{
+ width: 100%;
+ max-width: 1280px; 
+ /* height: 100vh; */
+ display: block;
+ margin: 0 auto; 
+ /* background-color: black; */
+ text-align: center;
+
+}
+
+.container-nav{
+    
+    background-color: #2F1893;
+    position: fixed; 
+    /* bottom: 50px; */
+    left: 0;
+    right: 0;
+    /* width: 100%; */
+    height: 85px;
+    z-index: 2;
+
+   }
+
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    /* min-width: 10vh; */
+    max-width: 1280px;
+    /* background-color: #2F1893; */
+    justify-content: space-around;
+    margin: auto;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    align-content: center; /* Align children vertically in the center */
+    
+}
+
+.nav > ul > li {
+    border-right: 2px solid white;
+    padding-right: 12px;
+    padding-left: 10px;
+}
+
+.nav > ul > li:first-child {
+    
+    padding-left: 0px;
+}
+
+.nav > ul > li:last-child {
+    border-right: none;
+    padding-right: 0px;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+
+}
+
+li {
+    text-indent: 0;
+    list-style-type: none;
+    color:white;
+    display: inline;    
+}
+
+/* .nav > ul > li:not(:first-child), .nav > ul > li:not(:last-child) {
+    border-right: 2px solid white;
+    padding-right: 5px;
+    padding-left: 5px;
+} */
+
+
+.nav > h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    padding-right: 50px; /*ADDED THIS*/
+    color: white;
+    /* text-align: center; */
+    
+     
+}
+
+
+.button {
+   background-color:  #E93A7D;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 30px;
+}
+    
+
+
+
+.cover-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*Align children horizontally in the center */
+    align-content: center; /*Align children vertically in the center*/
+    width: 50%;
+    margin: auto; /* This centers the child both horizontally and vertically */
+    background-color: white; 
+    text-align: center;
+    position: relative;
+    min-height: 100vh;
+    z-index: 1;
+    padding-top: 85px;
+
+}
+
+
+
+
+
+.dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+
+.text{
+    position: relative;
+    z-index: 999;
+
+}
+.dot1{
+    background: rgb(255,13,106);
+    background: radial-gradient(circle, rgba(255,13,106,1) 0%, rgba(255,13,106,0) 70%);
+    border-radius: 80%;
+    height: 400px;
+    width: 400px;
+    opacity: 0.5;
+    /* position: fixed; Set the items to absolute positioning */
+    /* left: 550px; 
+    top: 250px; */
+    margin-right: -300px;
+
+
+}
+.dot2{
+    background: rgb(5,0,255);
+    background: radial-gradient(circle, rgba(5,0,255,1) 0%, rgba(5,0,255,0) 70%);
+    border-radius: 80%;
+    height: 400px;
+    width: 400px;
+    opacity: 0.5;
+    /* position: fixed; Set the items to absolute positioning */
+    /* left: 650px; 
+    top: 250px; */
+    margin-right: 50px;
+      
+}
+
+.dot3{
+    background: rgb(0,255,224);
+    background: radial-gradient(circle, rgba(0,255,224,1) 0%, rgba(0,255,224,0) 70%);
+    border-radius: 80%;
+    height: 400px;
+    width: 400px;
+    opacity: 0.5;
+    /* position: fixed; /* Set the items to absolute positioning  
+    left: 750px; 
+    top: 250px; */
+    margin-left: -350px;
+    
+}
+
+
+
+
+    
+.cover-content h1, h2, h3{
+    /* background-color:blue; */
+    color: #1E0E62;
+    font-family: 'Roboto'
+}
+
+.cover-content p{
+    margin: 0;
+}
+
+.cover-content h1 {
+    font-size: 80px;
+}
+
+
+.cover-content h3 {
+    padding: 0;
+    font-size: 30px;  
+}
+
+.cover-content h2{
+    opacity: 40%;
+}
+
+.container-features{
+    width: 100%;
+    min-height: calc(100vh - 85px);
+    background-image: url('images/Image1.png');
+    background-size: cover;
+    
+}
+
+.features{
+    display: flex;
+    flex-direction: column;
+    min-width: 10vh;
+    max-width: 1280px;
+    text-align: center;
+    margin: auto;
+    color: white;
+    padding-top: 50px;
+  
+}
+
+/* .features h2{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; 
+  } */
+
+  .features h1{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 52px; /* 123.81% */
+    letter-spacing: 3px;
+    /* padding-left: 25px;
+    padding-right: 25px; */
+    text-align: center;
+    }
+      
+    .features p{
+    color: #FFF;
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; 
+    padding-left: 50px;
+    padding-right: 50px;
+    
+    }  
+
+
+.card-content{
+    display: flex;    
+    
+}
+
+.card-content h2{
+    color: white;
+}
+
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10px;
+    /* border: 2px solid var(--colors-white, #FFF); */
+    margin: 25px;
+    width: 370px;
+    height: 460px;
+    padding: 20px;
+    flex-shrink: 0;
+    border: 2px solid rgb(255, 255, 255,0.4);
+    
+}
+  
+  .icons{
+    font-size: 50px;
+  }
+
+  
+
+.cards p{
+font-family: 'DM Sans', sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; 
+}
+
+.cards button {
+font-family: 'DM Sans', sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 22px;
+border-radius: 100px;
+align-self: center;
+
+}
+
+
+.container-bill{
+display: flex;
+flex-direction: column;
+min-height: calc(100vh - 50px);
+max-width: 1280px;
+color: #1E0E62;
+text-align: center;
+font-family: 'DM Sans', sans-serif;
+font-size: 20px;
+letter-spacing: 3px;
+padding-top: 50px;
+align-content: center;
+margin: 0 auto;
+/* border: 1px solid black; */
+}
+
+.bill-forms{
+    border: 1px solid black;
+    min-height: calc(80vh - 50px);
+    max-width: 1280px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    padding-top: 50px;
+}
+
+.form-flexbox-label{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ /* border: 1px solid black; */
+ padding-left: 100px;
+ padding-right: 100px;
+ font-family: 'DM Sans', sans-serif;
+ font-size: 14px;
+ font-style: normal;
+ font-weight: 700;
+ /* line-height: 26px;  */
+ letter-spacing: 2px;
+ text-transform: uppercase;
+ padding-top: 20px;
+ padding-bottom: 5px;
+ flex-shrink: 0;
+ 
+ 
+}
+
+.form-flexbox-input{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+    flex-shrink: 0;
+    
+}
+
+
+.footer-bills{
+    display: flex;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 100px;
+    justify-content: space-between;
+}
+
+/* .form-flexbox-label > label:last-child {
+    
+    padding-right: 292px;
+} */
+
+
+/* .form-flexbox-input > input:last-child {
+    
+    padding-left: 390px;
+}  */
+.expirationlabel{
+    padding-left: 285px;
+}
+
+.cvvlabel{
+    padding-right: 60px;
+}
+
+.postcodelabel{
+    padding-right: 50px;
+}
+
+.lnamelabel {
+    padding-right: 292px;
+}
+
+.countrylabel{
+    padding-right: 309px;
+}
+
+#fname{
+    width: 550px;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+#lname{
+    width: 390px;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+
+#address{
+    width: 790px;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+#postcode{
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+
+#city{
+    width: 550px;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+#country{
+    width: 390px;
+    height: 50px;   
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+#cardnumber{
+    width: 500px;
+    height: 50px;  
+    border-radius: 10px; 
+    border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+#expiration{
+    width: 200px;
+    height: 50px;   
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+#cvv{
+    width: 100px;
+    height: 50px;  
+    border-radius: 10px; 
+    border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+
+.button2{
+    background-color:  #E93A7D;
+    border: none;
+    color: white;
+    padding: 0px 40px;
+    border-radius: 55px;   
+    
+}
