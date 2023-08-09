@@ -230,6 +230,7 @@ li {
     margin: auto;
     color: white;
     padding-top: 50px;
+    
   
 }
 
@@ -323,15 +324,19 @@ display: flex;
 flex-direction: column;
 min-height: calc(100vh - 50px);
 max-width: 1280px;
-color: #1E0E62;
-text-align: center;
-font-family: 'DM Sans', sans-serif;
-font-size: 20px;
-letter-spacing: 3px;
 padding-top: 50px;
-align-content: center;
 margin: 0 auto;
 /* border: 1px solid black; */
+}
+
+.container-bill > h1{
+    color: #1E0E62;
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 40px;
+    letter-spacing: 5px;
+    align-content: center;
+    
 }
 
 .bill-forms{
@@ -494,27 +499,85 @@ margin: 0 auto;
     padding-left: 100px;
     padding-right: 100px;
     padding-bottom: 5px;
+    padding-top: 20px;
 }
 
-.label-names :last-child{
-    padding-right: 310px;
+
+.label-secondname{
+    padding-right: 335px;
+}
+.label-postcode{
+    padding-right: 385px;
 }
 
-.input-names{
+.form-flex{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding-left: 100px;
-    padding-right: 100px;
-    /* width: 870px;
-    height: 50px; */
-    padding-bottom: 20px;
+    border: 1px solid black;
+    /* min-height: calc(80vh - 50px); */
+    max-width: 1280px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    padding: 25px 50px;
+    flex-wrap: wrap;  
+    /* flex-shrink: 0; */
+    
 }
 
-.input-first-name{
-     width: 470px;
+.form-control{
+    width: 50%;
+    padding: 15px 15px;
+  
+}
+ 
+.address{
+    width: 80%;
+}
+.postcode{
+    width: 20%;
+ }
+
+ .card{
+    width: 50%;
+ }
+.expiration{
+    width: 30%;
 }
 
-.input-last-name{
-     width: 470px;
+.cvv{
+    width: 20%;
 }
+
+
+.form-control > input {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 20px;    
+    height: 50px;
+
+  }
+
+
+  .form-control > label {
+    margin-bottom: 10px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .footer-bills{
+   display: flex;
+   width: 100%;
+   padding: 25px 150px 0px 150px;
+   justify-items: center;
+   margin: 0 auto;
+  }
+
+  .text-paypal{
+    padding-right: 350px;
+    margin-top: 15px;
+  }
+
