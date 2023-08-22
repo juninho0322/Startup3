@@ -21,7 +21,8 @@ html, body {
     left: 0;
     right: 0;
     height: 85px;
-
+    z-index: 99;
+    border-bottom: 1px solid #FFF;
    }
 
 
@@ -35,6 +36,8 @@ html, body {
     font-family: 'Montserrat', sans-serif;
     align-content: center; 
     position: relative;
+    
+
     
 }
 
@@ -233,9 +236,10 @@ li {
 
 /* --- CONTENT --- */
 .content-container{
-width: 100%;
-min-height: calc(100vh - 85px);
-background-color: #2F1893;
+    width: 100%;
+    min-height: calc(100vh - 85px);
+    background-color: #2F1893;
+    
 }
 
 .content{
@@ -246,12 +250,14 @@ background-color: #2F1893;
     text-align: center;
     margin: auto;
     flex-wrap: wrap;
+    padding-left: 40px;
+    padding-right: 20px;
+    
 }
 
 .content h3{
     font-family: 'DM Sans', sans-serif;
     font-size: 42px;
-    font-style: normal;
     font-weight: 700;
     line-height: 52px;
     letter-spacing: 2px;
@@ -267,8 +273,7 @@ background-color: #2F1893;
     flex-direction: row;
     width: 100%;
     padding-top: 70px;
-    align-content: center;
-    justify-content: center;
+    
 }
 
 .content-image{
@@ -276,6 +281,8 @@ background-color: #2F1893;
     width: 20%;
     position: relative;
     align-self: center;
+    z-index: 1;
+    
 }
 
 .play-icon{
