@@ -11,14 +11,7 @@ html, body {
 
 }
 
-/* .container{
- width: 100%;
- max-width: 1280px; 
- display: block;
- margin: 0 auto; 
- text-align: center;
 
-} */
 
 /* --- NAV --- */
 .container-nav{
@@ -28,7 +21,6 @@ html, body {
     left: 0;
     right: 0;
     height: 85px;
-
 
    }
 
@@ -42,28 +34,33 @@ html, body {
     align-items: center;
     font-family: 'Montserrat', sans-serif;
     align-content: center; 
+    position: relative;
     
 }
 
 .nav > ul > li {
-    border-right: 2px solid white;
-    padding-right: 12px;
-    padding-left: 10px;
-}
-/* TO BE IMPROVED*/
-.dropdown > li{
-    border-right: 2px solid white;
-    padding-right: 12px;
+    position: relative;
+    padding-right: 10px;
     padding-left: 10px;
 }
 
-/* .nav > ul > li:first-child {
-    padding-left: 0px;
-} */
 
-.nav > ul > li:last-child {
+
+.nav > ul > li:last-child::after {
     border-right: none;
-    padding-right: 0px;
+    
+}
+
+.nav > ul > li::after{
+    content: "";
+    border-right: 2px solid white;
+    display: inline-block;
+    height: 25px;
+    position: absolute ;
+    right: -2px;
+    top: 50%;
+    margin-top: -12.5px;
+    
 }
 
 ul{
@@ -105,30 +102,25 @@ li {
     padding: 14px 16px;
   }
 
-  /* The dropdown container */
-.dropdown {
-    float: left;
-    overflow: hidden;
-  }
 
-  .dropdown-content {
-    display: none;
+  .dropdown {   
     position: absolute;
     background-color: #f9f9f9;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    /* z-index: 1; */
-    /* margin-top: 35px; */
-  }
-
-  .dropdown-container{
+    visibility: hidden;
+    opacity: 0;
+    top: 100%;
+    transition: all 0.5s linear;
     display: flex;
     flex-direction: row;
     text-align: left !important;
     background-color:#2F1893;
+    width: 1100px;
     max-width: 1100px;
     height: 600px;
     padding: 40px 50px;
     flex-wrap: wrap;
+
   }
 
   .product > i  {
@@ -161,11 +153,19 @@ li {
 
   }
 
+  .li-products{
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }  
+
   
 
+
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
+ .li-products:hover .dropdown {
+     visibility: visible;
+     opacity: 1;
+     
 }
 
 /* HEADER */
