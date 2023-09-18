@@ -46,7 +46,7 @@ h2{
     display: flex;
     flex-direction: row;
     max-width: 1280px;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: auto;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
@@ -62,12 +62,11 @@ h2{
     padding-left: 10px;
 }
 
-
-
 .nav > ul > li:last-child::after {
     border-right: none;
-    
 }
+
+
 
 .nav > ul > li::after{
     content: "";
@@ -78,7 +77,6 @@ h2{
     right: -2px;
     top: 50%;
     margin-top: -12.5px;
-    
 }
 
 ul{
@@ -92,14 +90,12 @@ li {
     list-style-type: none;
     color:white;
     display: inline;    
-
 }
 
 .nav > h2{
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     color: white;
-    
 }
 
 
@@ -137,13 +133,14 @@ li {
     height: 600px;
     padding: 40px 50px;
     flex-wrap: wrap;
-
+    
   }
 
   .product > i  {
     color: white;
     font-size: 60px;
   }
+
   .product > h2  {
     color: white;
     font-family: 'DM Sans', sans-serif;
@@ -174,13 +171,15 @@ li {
   }  
 
   
-
-
 /* Show the dropdown menu on hover */
  .li-products:hover .dropdown {
      visibility: visible;
      opacity: 1;
+     /* pointer-events: none; */
+     
 }
+
+
 
 /* HEADER */
 .container-header{
@@ -201,16 +200,32 @@ li {
     font-family: 'DM Sans', sans-serif;
     font-size: 58px;
     letter-spacing: 3px;
-    padding-bottom: 0px;
+    /* padding-bottom: 0px;
     padding-left: 50px;
     padding-right: 50px;
-    padding-top: 70px;
+    padding-top: 70px; */
+    margin: 0 auto;
+    
 }
+
+.header-h1{
+    height: 200px;
+    padding: 50px 10px;
+    
+}
+
+.header-h5{
+    position: absolute;
+    margin-top: 250px;
+    max-width: 640px;
+    z-index: -1;
+}
+
 
 .header-text h5{
     font-family: 'DM Sans', sans-serif;
     font-size: 22px;
-    padding: 0 50px;
+    padding: 0 10px;
 }
 
 .header-text button{
@@ -224,10 +239,15 @@ li {
 
 .header-button{
     padding: 50px;
+    position: absolute;
+    margin-top: 500px;
+    max-width: 640px;
+    text-align: center;
+    z-index: -2;
 }
 
 .header-img{
-    padding: 80px 50px;
+    padding: 80px 5px;
     text-align: center;
 }
 
@@ -236,7 +256,7 @@ li {
     width: 15%;
     margin: 0 auto;
     justify-content: space-around;
-    padding-top: 56px;
+    
 }
 
 .pag{
@@ -262,8 +282,7 @@ li {
     text-align: center;
     margin: auto;
     flex-wrap: wrap;
-    padding-left: 40px;
-    padding-right: 20px;
+    padding: 0px 20px;
     
 }
 
@@ -285,7 +304,7 @@ li {
     position: relative;
     align-self: center;
     z-index: 1;
-    margin-right: 20px;
+    /* margin-right: 20px; */
     
 }
 

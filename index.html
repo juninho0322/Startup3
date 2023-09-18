@@ -8,6 +8,7 @@
 
     <!-- CSS NATIVE-->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
 
     <!-- NORMALIZE-->
     <link rel="stylesheet" href="normalize.css">
@@ -20,9 +21,11 @@
         rel="stylesheet">
 
     <!-- ICONS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://kit.fontawesome.com/f09dc2b710.js" crossorigin="anonymous"></script>
     <!-- ICONS -->
+
+    
 
 </head>
 
@@ -32,7 +35,7 @@
     <header>
         <div class="container-nav">
             <nav class="nav">
-                <ul>
+                <ul class="nav-desktop">
                     <li class="li-products">Product
                         <i class="fa-solid fa-angle-down"></i>
                         <div class="dropdown">
@@ -81,33 +84,48 @@
                     <li>Pricing</li>
                     <li>Community</li>
                 </ul>
-                <h2>Startup 3</h2>
-                <ul>
+                <h2 class="nav-logo">Startup 3</h2>
+                <ul class="nav-desktop">
                     <li>Help</li>
                     <li>Login</li>
                     <li><button class="button">Sign In</button></li>
                 </ul>
+                <div id="fa-bars"><i class="fa-solid fa-bars"></i></div> 
+                <div class="nav-responsive">
+                <ul>
+                    <li>Product</li>
+                    <li>Pricing</li>
+                    <li>Community</li>
+                    <li>Help</li>
+                    <li>Login</li>
+                </ul>
+                </div>
             </nav>
         </div>
+        
         <div class="container-header">
-            <div class="header-text column">
+            <div class="header-text column header-h1">
                 <h1>The best Apple Watch apps</h1>
-                <h5>Startup Framework gives you complete freedom over your creative process — you don’t have to think
-                    about any technical aspects. There are no limits and absolutely no coding. </h5>
-                <div class="header-button">
-                    <button>Download from App Store</button>
-                </div>
             </div>
             <div class="header-img column">
                 <img src="images/watch.png" alt="" class="img-watch">
             </div>
-            <div class="paginator">
+            <div class="header-text column header-h5">
+                <h5>Startup Framework gives you complete freedom over your creative process — you don’t have to think
+                    about any technical aspects. There are no limits and absolutely no coding. </h5>
+            </div>    
+                
+            <div class="header-button header-text column">
+                <button>Download from App Store</button>
+            </div>
+            
+            
+            <div class="paginator column">
                 <div class="pag"></div>
                 <div class="pag"></div>
                 <div class="pag"></div>
                 <div class="pag"></div>
             </div>
-
         </div>
     </header>
 
