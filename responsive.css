@@ -41,6 +41,23 @@
     border-bottom: none;
 }
 
+/*SCROLL ICON ANIMATION*/
+
+.scroll-icon{
+    visibility: hidden;
+}
+
+@keyframes scroll-icon {
+    0% { transform: translateX(0) }
+    25% { transform: translateX(5px) }
+    50% { transform: translateX(-5px) }
+    75% { transform: translateX(5px) }
+    100% { transform: translateX(0) }
+  }
+
+  .scroll-icon {
+    animation: scroll-icon 0.95s infinite;
+  }
 
 @media screen and (max-width: 1050px){
 
@@ -63,6 +80,10 @@
 
 @media screen and (max-width: 800px) {
     
+    .container-nav{
+        padding: 0;
+    }
+
     .nav{
         
         border-bottom: 1px solid #FFF;
@@ -127,11 +148,17 @@
         width: 15%;
         margin: 0 auto;
         justify-content: space-around;
-        padding-top: 150px;
+        padding-top: 180px;
+    }
+
+    .pag{
+        width: 15px;
+        height: 15px;
     }
 
     .container-header{
-        min-height: calc(100vh - 85px);
+        min-height: calc(100vh - 185px);
+        margin-bottom: 30px;
     }
 
     .content{
@@ -166,7 +193,55 @@
 
     }
 
+    .features{
+        margin-top: 40px;
+    }
 
+    .main-table{
+        margin-bottom: 40px;
+    }
+
+    
+
+    .footer-bills{
+        flex-direction: column;
+        padding: 0;
+        width: 70%;
+    }
+    
+    .fa-paypal{
+        text-align: center;
+    }
+
+    .button2{
+        width: 70%;
+        height: 2rem;
+        margin: 0 auto;
+    }
+
+    .text-paypal{
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    
+    .scroll-icon{
+        visibility: visible;
+        font-size: 2rem;
+        color: #2F1893;
+        padding: 1rem 0;
+        position: absolute;
+        margin-top: 1095px;
+        right: 1rem;
+    }
+
+    .container-price{
+        min-height: 115vh;
+    }
+    
 }
 
 /*MOBILE*/
@@ -222,5 +297,7 @@
         position: relative;
         margin-top: 10px;
     }
+
+    
 
 }

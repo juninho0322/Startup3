@@ -188,7 +188,7 @@ li {
     flex-direction: row;
     padding-top: 85px;
     max-width: 1280px;
-    min-height: 100vh;
+    min-height: 90vh;
     margin: 0 auto;
     flex-wrap: wrap;
     padding-left: 20px;
@@ -220,7 +220,7 @@ li {
     position: absolute;
     margin-top: 250px;
     max-width: 640px;
-    z-index: -1;
+    z-index: 1;
 }
 
 
@@ -245,7 +245,7 @@ li {
     margin-top: 500px;
     max-width: 640px;
     text-align: center;
-    z-index: -2;
+    z-index: 2;
 }
 
 .header-img{
@@ -314,7 +314,7 @@ li {
     padding: 0px 8px;
     position: relative;
     align-self: center;
-    z-index: 1;
+    z-index: 3;
     
     
 }
@@ -365,12 +365,16 @@ li {
     text-align: center;
     margin: auto;
     flex-wrap: wrap;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0 20px 20px;
+    overflow-x: auto;
 }
 
 .price-title{
     padding: 20px 0 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .main-table{
@@ -560,6 +564,7 @@ li {
 .card-content{
     display: flex;    
     flex-wrap: wrap;  
+    justify-content: center;
 }
 
 .cards > h3{
