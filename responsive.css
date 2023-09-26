@@ -299,6 +299,30 @@
         margin-top: 10px;
     }
 
+    .form-control{
+        width: 100%;
+    }
+
     
+
+    .address{
+        width: 70%;
+    }
+    .postcode{
+        width: 30%;
+    }
+
+    .card{
+        width: 50%;
+
+    }
+
+    .expiration{
+        width: 30%;
+    }
+
+    .cvv{
+        width: 20%;
+    }
 
 }
