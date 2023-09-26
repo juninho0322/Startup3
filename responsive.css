@@ -299,8 +299,16 @@
         margin-top: 10px;
     }
 
+    .h2-purple{
+        padding: 0.7rem;
+    }
+
     .form-control{
         width: 100%;
+    }
+
+    .form-flex{
+        padding: 1rem;
     }
 
     
